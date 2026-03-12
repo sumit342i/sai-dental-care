@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Clinic</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2 class="logo">🦷 SAI DENTAL CARE AND ORTHODONTIC CENTRE</h2>
+
+<nav id="navMenu">
+<a href="#home">Home</a>
+<a href="#doctor">Doctor</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+<h1>Your Smile, Our Priority</h1>
+<p>Advanced Dental Care with Modern Technology</p>
+
+<button onclick="scrollToAppointment()">
+Book Appointment
+</button>
+
+</div>
+
+</section>
+
+<!-- DOCTOR -->
+
+<section class="doctor" id="doctor">
+
+<h2>Meet Our Doctor</h2>
+
+<div class="doctor-container">
+
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\doctor.jpg.webp">
+
+<div>
+<h3>Dr. Ritesh Kumar Gupta</h3>
+<p>Expert dentist with 15+ years experience providing quality dental care.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for healthy smile.</p>
+</div>
+
+<div class="card">
+<h3>Root Canal</h3>
+<p>Advanced painless root canal treatment.</p>
+</div>
+
+<div class="card">
+<h3>Dental Implants</h3>
+<p>Permanent replacement for missing teeth.</p>
+</div>
+
+<div class="card">
+<h3>Braces</h3>
+<p>Orthodontic treatment for perfect alignment.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2>Dental Work Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="c:\Users\Entertainment\Pictures\hero 1st.avif">
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\hero.1st.jpg.avif">
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\hero.1st.jpg.avif">
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\hero.1st.jpg.avif">
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\hero.1st.jpg.avif">
+<img src="C:\tech projects(sumit&shivam)\dental-clinic-website\public\images\hero.1st.jpg.avif">
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews" id="reviews">
+
+<h2>Patient Reviews</h2>
+
+<div id="reviewList"></div>
+
+<input id="name" placeholder="Your Name">
+<textarea id="review" placeholder="Your Review"></textarea>
+
+<button onclick="submitReview()">Submit</button>
+
+</section>
+
+<!-- APPOINTMENT -->
+
+<section class="appointment">
+
+<h2>Book Appointment</h2>
+
+<div class="form">
+
+<input id="patientName" placeholder="Name">
+<input id="phone" placeholder="Phone">
+<input type="date" id="date">
+<textarea id="message" placeholder="Message"></textarea>
+
+<button onclick="bookAppointment()">Book</button>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Raxaul,Bihar&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
